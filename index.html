@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+		rel="stylesheet">
+	<title>RollingMovies</title>
+</head>
+<body>
+	<header>
+		<!-- /NavBar/ -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><i class="fas fa-film"></i>Rooling Movies</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Pelicula Principal -->
+	<main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Black Widow</h3>
+				<p class="descripcion">
+					Natasha Romanoff, alias Viuda Negra, se enfrenta a las partes más oscuras de su historia cuando
+					surge una peligrosa conspiración con vínculos con su pasado.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</div>
+		<!-- Peliculas Recomendada -->
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Películas Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div class="contenedor-principal c">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+						class="fas fa-angle-left"></i></button>
+
+				<div class="contenedor-carousel container-fluid my-3">
+					<div class="carousel row ">
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/LaGuerraDelMañana.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/Fast&Furious9.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/Luca.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/cruella.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/DespiertaLaFuria.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/disnatia.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/igorGrom.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/LacalledelterrorParte3.jpg"
+									alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/niPasoEnFalso.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/spirit.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/teenTitans.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/xtreme.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/WW84.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/Aves.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/jumanji.jpg" alt=""></a>
+						</div>
+						<div class="pelicula col-sm-6 col-md-5 col-lg-3 p-2 my-3">
+							<a href="#"><img src="/assets/img/PeliculasRecomendadas/BatmanH.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i
+						class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+		<!-- Seccion 2 -->
+		<section class="container-fluid my-3">
+			<div class="row justify-content-center">
+				<div class="col-sm-12 col-md-9 col-lg-7 p-3 my-3">
+					<div class="row justify-content-lg-start">
+						<div class="justify-content-lg-start">
+							<!-- Agregar Slide -->
+							<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+										class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+										aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+										aria-label="Slide 3"></button>
+								</div>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="/assets/img/Banners/joker.jpg" class="d-block w-100" alt="...">
+										<div class="carousel-caption d-none d-md-block">
+											<button>Ver ahora</button><button><i
+													class="fas fa-caret-right"></i></button>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="/assets/img/Banners/MK.jpg" class="d-block w-100" alt="...">
+										<div class="carousel-caption d-none d-md-block">
+											<button>Ver ahora</button><button><i
+													class="fas fa-caret-right"></i></button>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="/assets/img/Banners/endGames.jpg" class="d-block w-100" alt="...">
+										<div class="carousel-caption d-none d-md-block">
+											<button>Ver ahora</button><button><i
+													class="fas fa-caret-right"></i></button>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button"
+									data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button"
+									data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+
+						</div>
+					</div>
+					<!-- Ultimos Agregados -->
+					<div class="box">
+						<article>
+							<h2 class="my-3 text-white"><i id="iUltimos" class="fas fa-list me-3"></i>Ultimos Agregados
+							</h2>
+							<div class="col">
+								<div class="col">
+									<div class="row">
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/disomnia.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score1.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/elProtector.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score2.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/elsilencio.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score3.png" alt=""></div>
+											</a>
+										</div>
+										<!--Segunda Columna-->
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/gvsk.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score4.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/infinite.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score5.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/spaceJam.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score6.png" alt=""></div>
+											</a>
+										</div>
+										<!-- Tercera Columna -->
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/Elotro.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score7.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/nadie.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score8.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/sinremordimientos.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score5.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/victorioso.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score9.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/laPurga.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score10.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-4 p-1"><a href="">
+												<img src="/assets/img/Accion/ElbbJefazo2.jpg" width="100%" alt="">
+												<div class="centrado"><img src="/assets/score/score10.png" alt=""></div>
+											</a>
+										</div>
+										<div class="col">
+											<div class="row">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- /---- Botones Siguiente Pagina ----/  -->
+					<!-- <nav aria-label="Page navigation example">
+						<ul class="pagination my-3">
+							<li class="page-item"><a class="page-link" href="/pages/error404/error404.html">Previous</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="/pages/error404/error404.html">1</a></li>
+							<li class="page-item"><a class="page-link" href="/pages/error404/error404.html">2</a></li>
+							<li class="page-item"><a class="page-link" href="/pages/error404/error404.html">3</a></li>
+							<li class="page-item"><a class="page-link" href="/pages/error404/error404.html">Next</a>
+							</li>
+						</ul>
+					</nav> -->
+				</div>
+				<!-- /---- Col Derecha ---- / -->
+				<div class="col-sm-12 col-md-9 col-lg-3 p-3 my-2">
+
+					<h4 class="text-white">Lo mejor de esta semana</h4>
+					<div class="card">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<img src="/assets/img/Terror/terror.jpg" width="100%" alt="">
+								<h5>Terror</h5>
+							</li>
+							<li class="list-group-item">
+								<img src="/assets/img/Accion/accion.jpg" width="100%" alt="">
+								<h5>Accion</h5>
+							</li>
+							<li class="list-group-item">
+								<img src="/assets/img/Animadas/animadas.jpg" width="100%" alt="">
+								<h5>Animadas</h5>
+							</li>
+							<li class="list-group-item"><img src="/assets/img/Comedia/comedia.jpg" width="100%" alt="">
+								<h5>Comedia</h5>
+							</li>
+						</ul>
+					</div>
+
+
+					<!-- / ----  ---- / -->
+
+					<div class="d-none d-md-block">
+						<article class="p-4">
+							<img class="img-fluid my-2" src="/assets/images/publicidadone.jpg" alt="Publicidad-steam">
+							<hr>
+							<img class="img-fluid my-2" src="/assets/images/publicidadtwo.jpg" alt="Publicidad-eneba">
+							<hr>
+							<img class="img-fluid my-2" src="/assets/images/publicidadthree.png"
+								alt="Publicidad-netflix">
+							<hr>
+							<img class="img-fluid my-2" src="/assets/images/publicidadfour.jpeg"
+								alt="Publicidad-twitch">
+							<hr>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="/js/bootstrap.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
