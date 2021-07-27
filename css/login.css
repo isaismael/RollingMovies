@@ -1,0 +1,71 @@
+body {
+    background-image: url(../assets/img/login.png);
+    background-repeat: no-repeat;
+    /* Para que no se repita la imagen*/
+    background-attachment: fixed;
+    /* Propiedad que establece si la img de fondo se desplaza con el resto o es fija*/
+    background-size: cover;
+    /* Especifica el tamaño de fondo. Cover(cambia el tamaño de la img para cubrir todo el contenedor)Contain(asegura que la img sea completamente visible)100% !00%, 75% 50%,*/
+    height: 100vh;
+}
+
+header nav {
+    height: 40vh;
+    align-items: flex-start;
+}
+
+.box {
+    position: relative;
+    top: -100px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    min-height: 370px;
+}
+
+form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formulario {
+    background: rgba(0, 0, 0, .3);
+    /*Agrega color del fondo sombreado al formukario*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0, 0.568);
+    /*Sombras de la caja. El primer valor es el desplazamiento horizontal y el segundo valor es el desplazamiento vertical. El color de la sombra se heredará del color del texto*/
+    color: white/* Agregar el color al título del formulario*/
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, .5);
+    /* Color de fondo al input*/
+    border-style: none;
+    transition: 00.5s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control :focus {
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.ingresar,
+.registrarse {
+    background-color: steelblue;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+}
+
+.registrarse a {
+    text-decoration: none;
+    color: white;
+}
