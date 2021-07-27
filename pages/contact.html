@@ -12,11 +12,12 @@
 
 </head>
 <body>
+  
     <header>
         <!-- /NavBar/ -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#"><i class="fas fa-film"></i>Rooling Movies</a>
+				<a class="navbar-brand" href="../index.html"><i class="fas fa-film"></i>Rooling Movies</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
@@ -56,58 +57,18 @@
 			</div>
 		</nav>
     </header>
-    <main>
-        <div class="p-5 mb-5">
-
-            <article class="card shadow p-5 mb-5">
-                
-                <h1 style="text-align: center;">Contacto</h1>
-                
-                <p>
-                    Deje su consulta o problema aqui, sera respondido a la brevedad.
-                </p>
-                <div class="input-group mb-3 p-1">
-                    <span class="input-group-text" id="basic-addon1">Nombre de usuario</span>
-                    <input type="text" class="form-control" placeholder="Ej: pepito123_" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                <div class="input-group mb-3 p-1">
-                    <span class="input-group-text" id="basic-addon1">Nombre</span>
-                    <input type="text" class="form-control" placeholder="Ej: Juan" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                <div class="input-group mb-3 p-1">
-                    <span class="input-group-text" id="basic-addon1">Apellido</span>
-                    <input type="text" class="form-control" placeholder="Ej: Gomez" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                  
-                  <div class="input-group mb-3 p-1">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2">Mail</span>
-                  </div>
-                  
-                  <label for="basic-url" class="form-label">Your vanity URL</label>
-                  <div class="input-group mb-3 p-1">
-                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                  </div>
-                  
-                  <div class="input-group mb-3 p-1">
-                    <span class="input-group-text">$</span>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <span class="input-group-text">.00</span>
-                  </div>
-                  
-                  <div class="input-group mb-3 p-1">
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                    <span class="input-group-text">@</span>
-                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                  </div>
-                  
-                  <div class="input-group">
-                    <span class="input-group-text">With textarea</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                  </div>    
-            </article>
-        </div>-->
+    <main class="colorear">
+      <div class="p-3 mb-5">
+        <form action="">
+          <h2>Contacto</h2>
+          <p>Complete los datos que se requieren para continuar</p>
+          <input type="text" name="Nombre" placeholder="Nombre">
+          <input type="text" name="Corre" placeholder="Correo">
+          <input type="text" name="Telefono" placeholder="Telefono">
+          <textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+          <input type="button" value="ENVIAR" id="boton">
+          </form>
+      </div>  
     </main>
     <footer>
 

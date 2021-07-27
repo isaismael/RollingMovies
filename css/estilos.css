@@ -253,3 +253,82 @@ button i{
 }
 
 
+/*.colorear {
+	background-image: linear-gradient(
+      rgba(10, 0, 0, 0.5), 
+      rgba(17, 0, 0, 0.5)
+    ),
+ url(../assets/img/ImgContact/backgroung.jpg); 
+max-width: 100%;
+width:
+
+}+*/
+
+.colorear{
+	background-image: url(../assets/img/ImgContact/pexels-cottonbro-4722583.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+form{
+	width: 450px;
+	margin: auto;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 0%;
+}
+
+h2 {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+p {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+
+
+input , textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+textarea {
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+}
+
+
+#boton{
+	background: #ff7d12;
+	color: #fff;
+	padding: 20px;
+}
+
+#boton:hover{
+	cursor : pointer
+
+}
+
+@media (max-width:480px){
+	form{
+		width: 100%;
+	}
+
+}
