@@ -290,7 +290,7 @@ h2 {
 }
 
 p {
-	color: #fff;
+	color: #fff !important;
 	text-align: center;
 	margin: 0;
 	font-size: 17px;
@@ -305,7 +305,6 @@ input , textarea {
 	box-sizing: border-box;
 	font-size: 17px;
 	border: none;
-	background-color: rgba(0, 0, 0, 0.8);
 }
 
 textarea {
@@ -314,21 +313,77 @@ textarea {
 	max-width: 100%;
 }
 
-
-#boton{
-	background: #ff7d12;
-	color: #fff;
-	padding: 20px;
-}
-
-#boton:hover{
-	cursor : pointer
-
-}
-
 @media (max-width:480px){
 	form{
 		width: 100%;
 	}
 
 }
+@media (max-width:830){
+	.row{
+		
+	}
+
+}
+
+form{
+	background-color:rgba(0, 0, 0, 0.8);
+	color:white;
+	border-radius: 0%;
+}
+
+#submit {
+	background: #ff7d12;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+
+}
+
+#submit:hover{
+	cursor: pointer;
+}
+
+
+
+.header{
+	background-image: url(../assets/img/FondoIndex/popcorns.jpg);
+	background-color:rgba(0, 0, 0, 0.8);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.header::before{
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.header , h2 , p ,div {
+		color: #fff;
+		position: relative
+}
+
+h2 {
+	font-size: 60px;
+}
+
+.row {
+	text-align: center;
+	padding: 70px;
+}
+
+/*buscador*/
+
+
+
+
+
+
+
