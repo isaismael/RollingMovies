@@ -1,10 +1,19 @@
-var name = document.getElementById('name').value;
-var usuario = document.getElementById('usuario').value;
-var email = document.getElementById('email').value;
-var password = document.getElementById('password').value;
-
-localStorage.setItem("name", name);
-localStorage.setItem("usuario", usuario);
-localStorage.setItem("email", email);
-localStorage.setItem("password", password);
-JSON.stringify(name, usuario, email, password);
+let form1 = document.getElementById('form1');
+form1.addEventListener('submit', function(e) {
+    console.log(e);
+    e.preventDefault();
+    let oldUser = JSON.parse(localStorage.getItem("users")) || [];
+    let name = document.getElementById('name').value;
+    let usuario = document.getElementById('usuario').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    console.log(name, usuario, email, password);
+    let user = {
+        name,
+        user: usuario,
+        email,
+        password
+    };
+    oldUser.push(user);
+    localStorage.setItem('users', JSON.stringify(oldUser));
+});

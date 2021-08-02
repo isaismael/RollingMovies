@@ -47,16 +47,16 @@
                 <form action="" class="formulario__register" id="form1">
                     <h2>Registro</h2>
                     <input type="text" placeholder="Nombre Completo" id="name" required />
-                    <input type="email" placeholder="Correo Electronico" id="email" required />
+                    <input type="email" placeholder="Correo Electronico" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9·-]+\.[a-z]{2,4}$" />
                     <input type="text" placeholder="Usuario" id="usuario" required />
                     <input type="password" placeholder="Contraseña" id="password" required />
-                    <button type="submit" id="btnSubmit" onclick="registrarUsuario">Registrarse</button>
+                    <button type="submit" id="btnSubmit">Registrarse</button>
                 </form>
                 <!-- login -->
                 <form action="" class="formulario__login" id="form2">
                     <h2>Iniciar sesion</h2>
-                    <input type="email" placeholder="Correo Electronico" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9·-]+\.[a-z]{2,4}$" />
-                    <input type="password" placeholder="Contraseña" class="password" />
+                    <input type="email" placeholder="Correo Electronico" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9·-]+\.[a-z]{2,4}$" id="email2" />
+                    <input type="password" placeholder="Contraseña" class="password" id="password2" />
                     <button type="submit" id="btn">Entrar</button>
                 </form>
             </div>
