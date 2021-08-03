@@ -35,18 +35,21 @@
 //     };
 
 // });
-let arrayusuarios = [];
-let form = document.getElementById("form2");
-let email = document.getElementById("email2");
-let password = document.getElementById("password2");
-let users = JSON.parse(localStorage.getItem("users")) || [];
-console.log(users);
 class User {
     constructor(user, pass) {
         this.user = user;
         this.pass = pass;
     }
 }
+
+let arrayusuarios = [];
+let form = document.getElementById("form2");
+let email = document.getElementById("email2");
+let password = document.getElementById("password2");
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
+console.log(users);
+
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     if (users.length > 0) {

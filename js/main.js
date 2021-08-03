@@ -58,3 +58,13 @@ peliculas.forEach((pelicula) => {
 fila.addEventListener('mouseleave', () => {
 	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });
+
+// Agregar boton de administracion si el user es admin
+let linkContainer = document.querySelector('#links');
+let currentUser = JSON.parse(localStorage.getItem('user'));
+if(user.admin == true) {
+	const linkAdmin = document.createElement('li');
+	linkAdmin.classList.add('nav-item');
+	linkAdmin.innerHTML = '<a class="nav-link" href="/pages/admin.html">Administrar películas</a>';
+	linkContainer.appendChild(linkAdmin);
+}
