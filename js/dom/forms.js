@@ -60,7 +60,7 @@ function saveUser() {
     localStorage.setItem('user', JSON.stringify(user));
     var params = {
         from: document.getElementById("email").value,
-        to: "jleiva21082004@gmail.com",
+        to: "tomasacv21407@gmail.com",
         message:"Te enviamos las respuestas a los datos requeridos en el formulario. Sera respondido a la brevedad.",
         username: document.getElementById("username").value, 
         name : document.getElementById("nombre").value,
