@@ -4,15 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/estilos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
 		rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
+        <!-- /NavBar/ -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../index.html"><i class="fas fa-film"></i>Rooling Movies</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
     </header>
-    <main></main>
+    <main class="background-buscador">
+        <div class="row">
+            <div class="col input-buscador">
+                <h1>¡Busca aqui!</h1>
+                <input type="text" class="input-buscador col-sm-6 col-md-6 col-lg-6 col-xl-6 p-2 my-3 " id="buscar-pal" onkeyup="autocompletado()" placeholder="Buscar...">
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-buscador">
+                <div id="demo"></div>
+            </div>
+        </div>
+              
+        
+    <div class="wrap">
+		<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="btn category_item" category="all">Todo</a>
+				<a href="#" class="btn category_item" category="ordenadores">Accion</a>
+				<a href="#" class="btn category_item" category="laptops">Aventuras</a>
+				<a href="#" class="btn category_item" category="smartphones">Ciencia Ficcion</a>
+				<a href="#" class="btn category_item" category="monitores">Drama</a>
+				<a href="#" class="btn category_item" category="audifonos">Comedia</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="laptops">
+					<img src="../assets/img/PeliculasRecomendadas/Luca.jpg" alt="" >
+					<a href="#">Luca</a>
+				</div>
+				<div class="product-item" category="laptops">
+					<img src="../assets/img/Accion/spaceJam.jpg" alt="" >
+					<a href="#">Space Jam</a>
+				</div>
+				<div class="product-item" category="smartphones">
+					<img src="../assets/img/PeliculasRecomendadas/Aves.jpg" alt="" >
+					<a href="#">Aves</a>
+				</div>
+				<div class="product-item" category="smartphones">
+					<img src="../assets/img/PeliculasRecomendadas/jumanji.jpg" alt="" >
+					<a href="#">Jumanji</a>
+				</div>
+				<div class="product-item" category="ordenadores">
+					<img src="../assets/img/PeliculasRecomendadas/cruella.jpg" alt="" >
+					<a href="#">Cruella</a>
+				</div>
+				<div class="product-item" category="ordenadores">
+					<img src="../assets/img/PeliculasRecomendadas/BatmanH.jpg" alt="" >
+					<a href="#">Batman</a>
+				</div>
+				<div class="product-item" category="monitores">
+					<img src="../assets/img/PeliculasRecomendadas/DespiertaLaFuria.jpg" alt="" >
+					<a href="#">Despierta la furia</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<img src="../assets/img/PeliculasRecomendadas/LaGuerraDelMañana.jpg" alt="" >
+					<a href="#">La guerra del mañana</a>
+				</div>
+			</section>
+		</div>
+	</div>
+    </main>
+    
+        <!--<select id="gen" name="gen" >Elegir genero
+            <option value="action">Accion</option>
+            <option value="terror">Terror</option>
+            <option value="war">Guerra</option>
+        </select>-->
 </body>
+<!--<script>
+    let select = document.getElementById("gen");
+    let movies = [
+            {name:"Space Jam",gen:"action"},
+            {name:"Luca",gen:"terror"},
+            {name:"Black Widow",gen:"war"},
+            {name:"Toy Story 4",gen: "war"},
+            {name:"La purga",gen:"action"},
+        ];
+        select.addEventListener("change", (event)=> {
+        console.log(event.target.value);
+
+        let filteredMovies = [];
+        movies.forEach(m =>{
+            let filtered = m.gen.includes(event.target.value);
+            if(filtered) {
+                filteredMovies.push(m)
+            }
+            
+        });
+        console.log(filteredMovies);
+        renderizar(filteredMovies);
+    })
+    function renderizar(list) {
+        let html = ``
+        list.forEach(el=> {
+            html += `<li>${el.name}</li>`
+        })
+        let contenedorPeliculas = document.querySelector(".peliculas");
+        contenedorPeliculas.innerHTML = html;
+    }
+    renderizar(movies)
+</script>-->
+<script src="../js/dom/buscador.js"></script>
 </html>

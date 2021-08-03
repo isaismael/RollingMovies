@@ -58,9 +58,28 @@ function saveUser() {
 
     console.log(user);
     localStorage.setItem('user', JSON.stringify(user));
+    var params = {
+        from: document.getElementById("email").value,
+        to: "jleiva21082004@gmail.com",
+        message:"Te enviamos las respuestas a los datos requeridos en el formulario. Sera respondido a la brevedad.",
+        username: document.getElementById("username").value, 
+        name : document.getElementById("nombre").value,
+        surname : document.getElementById("apellido").value,
+        email : document.getElementById("email").value,
+        edad : document.getElementById("edad").value,
+        sexo : document.getElementById("sexo").value,
+    };
+     
+    emailjs.send('service_zbtl8uu', 'template_1ls0nr8', params)
+        .then(function(response) {
+           console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+           console.log('FAILED...', error);
+        });
 }
 
 function checkearValidez() {
     console.log('Borrar');
 }
+
 

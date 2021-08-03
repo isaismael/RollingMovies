@@ -66,31 +66,31 @@
                     <form action="saludar()" id="myForm">
                         <div class="mb-3">
                             <label for="">Nombre</label>
-                            <input type="text" name="nombre" class="form-control" placeholder="Juan" required
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Juan" required
                                 onkeyup="checkearValidez()">
                         </div>
                         <div class="mb-3">
                             <label for="">Apellido</label>
-                            <input type="text" name="surname" class="form-control" required minlength="5" placeholder="Gomez">
+                            <input type="text" name="surname" id="apellido" class="form-control" required minlength="5" placeholder="Gomez">
                         </div>
 						<div class="mb-3">
                             <label for="">Username</label>
-                            <input type="text" name="nombre" class="form-control" placeholder="pepito123_" required
+                            <input type="text" name="nombre" id="username" class="form-control" placeholder="pepito123_" required
                                 onkeyup="checkearValidez()">
                         </div>
                         <div class="mb-3">
                             <label for="">Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="juangomez@gmail.com" required
+                            <input type="email" name="email" id="email" class="form-control" placeholder="juangomez@gmail.com" required
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">
                                 <label for="age">Edad</label>
-                                <input type="number" name="age" id="age" class="form-control" required min="12" max="120">
+                                <input type="number" name="age" id="edad" id="age" class="form-control" required min="12" max="120">
                             </div>
                             <div class="col-6">
                                 <label for="gender">Sexo</label>
-                                <select name="gender" id="gender" class="form-select mb-3">
+                                <select name="gender" id="sexo"  class="form-select mb-3">
                                     <option value="female">Mujer</option>
                                     <option value="male">Hombre</option>
                                     <option value="none" selected>Sin definir</option>
@@ -115,6 +115,5 @@
     </script>
 
     <script src="../js/dom/forms.js"></script>
-    <script src="../js/dom/email.js"></script>
 </body>
 </html>
