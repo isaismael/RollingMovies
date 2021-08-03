@@ -3,7 +3,7 @@ function autocompletado () {
     document.getElementById("demo").innerHTML = '';
 
       var preguntas = [
-        {nombre:"Luca",genero:"Genero"},		
+        {nombre:"Luca",genero:"Animada", href:"404"},		
         {nombre:"Black Widow",genero:"Accion"},		
         {nombre:"Bisomia",genero:"Suspenso"},		
         {nombre:"El protector",genero:"Suspenso"},		

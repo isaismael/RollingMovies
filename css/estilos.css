@@ -601,7 +601,7 @@ img.imgBuscador{
 }
 
 #demo div{
-	padding: 30px;
+	padding: 20px;
 	margin: 2px;
 	color: WHITE;
 	background-color:orangered;
@@ -611,6 +611,13 @@ img.imgBuscador{
 	background-color: #ff7d12;
 }
 
+#myForm{
+	background-color: rgb(197, 55, 3);
+}
+
+#contact-row{
+	padding: 0px;
+}
 
 
 
